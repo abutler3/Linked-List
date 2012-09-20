@@ -199,14 +199,14 @@ class LinkedListTest < Test::Unit::TestCase
 
   def test_28_search_for_cstrength
     ll = LinkedList.new()
-    # ll.add_item("foo")
-    # ll.add_item("bar")
-    # ll.add_item("grille")
-    # ll.add_item("dog")
-    # ll.add_item("elephant")
+    ll.add_item("foo")
+    ll.add_item("bar")
+    ll.add_item("grille")
+    ll.add_item("dog")
+    ll.add_item("elephant")
     assert_equal(nil,ll.index("terrible"))
     # assert_raise IndexError do
-    #   ll.index("strength")
+    #   ll.index("terrible")
     # end
     #assert_raise (IndexError){ll.index("terrible")} Same thing as the do and end
   end
